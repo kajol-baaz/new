@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Item</title>
+  <link rel="stylesheet" href="new.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" id="navcolor">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand"><i class="bi bi-tropical-storm"></i>MyApp</a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navtarget">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navtarget">
+      <!-- stretch the UL across the navbar and space items evenly -->
+      <ul class="navbar-nav w-100 d-flex justify-content-start align-items-center gap-3 ms-5">
+        <li class="nav-item"><a href="#sec-1" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#sec-2" class="nav-link">About</a></li>
+
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Services</a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Startups</a>
+            <a href="#" class="dropdown-item">Freelancers</a>
+            <a href="#" class="dropdown-item">Investors (Future phase)</a>
+          </div>
+        </li>
+
+        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+        <!-- its just idea if you like u can customize -->
+        <!-- <li class="nav-item ms-auto" id="search-bar">
+          <form class="d-flex align-items-center p-3" role="search">
+            <div class="input-group input-group-sm rounded overflow-hidden" style="min-width:150%; display: none;">
+              <input type="search" class="form-control  border-0" placeholder="Search startups, freelancers" aria-label="Search">
+              <button class="btn btn-dark" type="button"><i class="bi bi-search"></i></button>    
+            </div>
+          </form>
+        </li> -->
+
+        <!-- group signup/login inside their own item, use gap for spacing -->
+        <li class="nav-item ms-auto">
+          <a href="#" class="nav-link">Sign up</a>
+        </li>
+        <li class="nav-item" id="lits-of-login">
+          <a href="#" class="nav-link text-white">Log in</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="sec-1">
+  <div class="hero text-center">
+    <h1>Where Startups Grow & Talent Connects</h1>
+    <p>The complete ecosystem for startups to find talent, freelancers to discover opportunities, and investors to spot the next unicorn</p>
+     <button type="button" id="Startup">Join as Startup</button>
+     <button type="button" id="freelancer">Join as Freelancer</button>
+    <form class="d-flex justify-content-center">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for startups, freelancers..." aria-label="Search">
+        <button type="button" class="btn btn-secondary">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+<section id="sec-2">
+  <div id="page-2">
+    <h2 class="left-shift">200000+</h2>
+    <p id="p-0">Startups Registered</p>
+    <h2 class="left-shift-1">50000+</h2>
+    <p id="p-1">Freelancers</p>
+    <h2 class="right-shift">1000+</h2>
+    <p id="p-2">Investors (Coming Soon)</p>
+    <h2 class="right-shift-1">$10M</h2>
+    <p id="p-3">Funding Raised</p>
+  </div>
+  <div class="content text-center">
+    <h1>Why Choose My App?</h1>
+    <p>Connecting Startups, Freelancers, and Investors in One Powerful Platform</p>  
+    </div>
+</section> 
+<section id="sec-3">
+  <div class="container text-center">
+    <h1>How It Works</h1>
+    <p>Join our community and start connecting today</p>
+    <div class="row justify-content-center gap-5">
+      <div class="col-md-5 d-flex flex-column" id="startups-sec">
+        <i class="bi bi-people-fill text-primary py-3" style="font-size: 3rem;"></i>
+        <h2>For Startups</h2>
+        <p>Find the right talent to build your dream team</p>
+      </div>
+      <div class="col-md-5 d-flex flex-column" id="freelancers-sec">
+        <i class="bi bi-person-fill text-success py-3" style="font-size: 3rem;"></i>
+        <h2>For Freelancers</h2>
+        <p>Discover exciting projects and grow your career</p>
+      </div>
+    </div>
+  </div>
+  <section id="sec-4" class="h-100">
+    <!-- for this moment we are not doing sliding but for future we will -->
+    <h1>Testimonials</h1>
+    <p>What our users are saying</p>
+  <div class="container my-4">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 p-3">
+          <div class="d-flex align-items-center gap-3">
+            <i class="bi bi-person-circle fs-1 text-primary" aria-hidden="true"></i>
+            <div>
+              <h6 class="mb-0">Alex Johnson</h6>
+              <small class="text-muted">Founder, BrightStart</small>
+            </div>
+          </div>
+          <p class="mt-3 mb-0">“Great platform — found the perfect engineer in days.”</p>
+          <div class="text-end text-muted mt-2"><i class="bi bi-chat-quote-fill"></i></div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 p-3">
+          <div class="d-flex align-items-center gap-3">
+            <i class="bi bi-person-circle fs-1 text-success" aria-hidden="true"></i>
+            <div>
+              <h6 class="mb-0">Priya Singh</h6>
+              <small class="text-muted">Freelancer</small>
+            </div>
+          </div>
+          <p class="mt-3 mb-0">“I landed steady gigs and grew my portfolio quickly.”</p>
+          <div class="text-end text-muted mt-2"><i class="bi bi-chat-quote-fill"></i></div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 p-3">
+          <div class="d-flex align-items-center gap-3">
+            <i class="bi bi-person-circle fs-1 text-warning" aria-hidden="true"></i>
+            <div>
+              <h6 class="mb-0">Michael Lee</h6>
+              <small class="text-muted">Investor (Beta)</small>
+            </div>
+          </div>
+          <p class="mt-3 mb-0">“Useful insights and quality dealflow — highly recommend.”</p>
+          <div class="text-end text-muted mt-2"><i class="bi bi-chat-quote-fill"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- this is second type but it have a issue with button -->
+   <!-- <section id="sec-3">
+  <div class="container text-center">
+    <h1>How It Works</h1>
+    <p>Join our community and start connecting today</p>
+<div id="testimonialCarousel" class="carousel slide" data-bs-ride="false" data-bs-interval="5000">
+  
+   Slides wrapper 
+  <div class="carousel-inner">
+
+      first
+    <div class="carousel-item active">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-3">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-person-circle fs-1 text-primary"></i>
+              <div>
+                <h6 class="mb-0">Alex Johnson</h6>
+                <small class="text-muted">Founder, BrightStart</small>
+              </div>
+            </div>
+            <p class="mt-3 mb-0">“Great platform — found the perfect engineer in days.”</p>
+            <div class="text-end text-muted mt-2"><i class="bi bi-chat-quote-fill"></i></div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 p-3">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-person-circle fs-1 text-success"></i>
+              <div>
+                <h6 class="mb-0">Priya Singh</h6>
+                <small class="text-muted">Freelancer</small>
+              </div>
+            </div>
+            <p class="mt-3 mb-0">“I landed steady gigs and grew my portfolio quickly.”</p>
+            <div class="text-end text-muted mt-2"><i class="bi bi-chat-quote-fill"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    Second slide 
+    <div class="carousel-item">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-3">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-person-circle fs-1 text-warning"></i>
+              <div>
+                <h6 class="mb-0">Michael Lee</h6>
+                <small class="text-muted">Investor (Beta)</small>
+              </div>
+            </div>
+            <p class="mt-3 mb-0">“Useful insights and quality dealflow — highly recommend.”</p>
+            <div class="text-end text-muted mt-2"><i class="bi bi-chat-quote-fill"></i></div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 p-3">
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-person-circle fs-1 text-danger"></i>
+              <div>
+                <h6 class="mb-0">Your Name</h6>
+                <small class="text-muted">User</small>
+              </div>
+            </div>
+            <p class="mt-3 mb-0">What's your view? Share your testimonial.</p>
+            <a href="#sec-3" class="btn btn-sm btn-outline-primary mt-2">Share your view</a>
+            <div class="text-end text-muted mt-2"><i class="bi bi-chat-quote-fill"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev mr-5" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ --> 
+<section id="sec-5">
+  <div class="container">
+    <h1 >Join My App</h1>
+  <div class="row justify-content-center gap-3 flex-nowrap ">
+    <div class="col-md-6 col-lg-8 d-flex flex-column magic-sec">
+      <i class="bi bi-people-fill text-primary icon"></i>
+      <h2 class="text-nowrap">Register as Startup</h2>
+      <p class="text-nowrap"><i class="bi bi-check2-circle text-success"></i> Post unlimited job listings</p>
+      <p class="text-nowrap"><i class="bi bi-check2-circle text-success"></i> Access to verified freelancers</p>
+      <p class="text-nowrap"><i class="bi bi-check2-circle text-success"></i> Pitch to investors</p>
+      <p class="text-nowrap"><i class="bi bi-check2-circle text-success"></i> Collaboration opportunities</p>
+      <button id="openStartupForm" class="btn btn-sm btn-primary mt-2 mb-2 align-self-start">Get Started</button>
+    </div>
+
+    <div id="startupFormWrap" class="col-8 mt-3 d-none">
+      <div class="card p-3">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h5 class="mb-0">Startup Registration</h5>
+        <button id="closeStartupForm" class="btn btn-sm btn-outline-secondary">Close</button>
+      </div>
+
+      <form id="startupForm" class="startup-form" action="#" method="post" enctype="multipart/form-data">
+        <div class="row g-2 ">
+        <div class="col-md-6">
+          <label for="startupName" class="form-label">Startup Name</label>
+          <input type="text" id="startupName" name="startupName" class="form-control" placeholder="Enter your startup name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="founderName" class="form-label">Founder Name</label>
+          <input type="text" id="founderName" name="founderName" class="form-control" placeholder="Enter founder's name" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="industry" class="form-label">Industry / Domain</label>
+          <select id="industry" name="industry" class="form-select" required>
+          <option value="">Select industry</option>
+          <option value="ai/ml">AI / ML</option>
+          <option value="fintech">Fintech</option>
+          <option value="healthtech">HealthTech</option>
+          <option value="edtech">EdTech</option>
+          <option value="ecommerce">E-commerce</option>
+          <option value="saas">SaaS</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label for="stage" class="form-label">Stage</label>
+          <select id="stage" name="stage" class="form-select" required>
+          <option value="">Select stage</option>
+          <option value="idea">Idea</option>
+          <option value="mvp">MVP</option>
+          <option value="earlyTraction">Early Traction</option>
+          <option value="funded">Funded</option>
+          <option value="growth">Growth</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <label for="description" class="form-label">Company Description</label>
+          <textarea id="description" name="description" class="form-control" placeholder="Tell us about your company" rows="3" required></textarea>
+        </div>
+
+        <div class="col-md-4">
+          <label for="teamSize" class="form-label">Team Size</label>
+          <input type="number" id="teamSize" name="teamSize" class="form-control" placeholder="Enter team size" min="1" required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="website" class="form-label">Website</label>
+          <input type="url" id="website" name="website" class="form-control" placeholder="https://example.com">
+        </div>
+
+        <div class="col-md-4">
+          <label for="pitchDeck" class="form-label">Upload Pitch Deck</label>
+          <input type="file" id="pitchDeck" name="pitchDeck" class="form-control" accept=".pdf,.ppt,.pptx">
+        </div>
+
+        <div class="col-12 d-flex gap-2 mt-2">
+          <button type="submit" class="btn btn-primary" id="submitStartup">Complete Registration</button>
+          <button type="button" class="btn btn-outline-secondary" id="resetStartup">Reset</button>
+          <div id="startupFeedback" class="ms-auto text-success d-none align-self-center">Submitted ✓</div>
+        </div>
+        </div>
+      </form>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-8 d-flex flex-column magic-sec">
+      <i class="bi bi-person-fill text-success icon"></i>
+      <h2 class="text-nowrap">Register as Freelancer</h2>
+      <p class="text-nowrap"><i class="bi bi-check2-circle text-success"></i> Find exciting Startup projects</p>
+      <p class="text-nowrap"><i class="bi bi-check2-circle text-success"></i> AI-powered job matching</p>
+      <p class="text-nowrap"><i class="bi bi-check2-circle text-success"></i> Build your portfolio</p>  
+      <p class="text-nowrap"><i class="bi bi-check2-circle text-success"></i> Direct client communication</p> 
+      <button id="openFreelancerForm" class="btn btn-sm btn-success mt-2 mb-2 align-self-start">Get Started</button>
+    </div> 
+    <div id="freelancerFormWrap" class="col-8 mt-3 d-none startup-form">
+      <div class="card p-3">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h5 class="mb-0">Freelancer Registration</h5>
+        <button id="closeFreelancerForm" class="btn btn-sm btn-outline-secondary">Close</button>
+      </div>
+
+      <form id="registerForm" class="mt-3 w-100">
+        <div class="mb-2">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+
+        <div class="mb-2">
+        <label for="skill" class="form-label">Primary Skill</label>
+        <input type="text" id="skill" name="skill" class="form-control" placeholder="e.g. Web Development" required>
+        </div>
+
+        <div class="mb-2">
+        <label for="bio" class="form-label">Professional Bio</label>
+        <textarea id="bio" name="bio" class="form-control" rows="4" placeholder="Tell us about yourself..." required></textarea>
+        </div>
+
+        <div class="row g-2">
+        <div class="col-md-6 mb-2">
+          <label for="experience" class="form-label">Years of Experience</label>
+          <input type="number" id="experience" name="experience" class="form-control" min="0" placeholder="e.g. 5" required>
+        </div>
+
+        <div class="col-md-6 mb-2">
+          <label for="rate" class="form-label">Hourly Rate (USD)</label>
+          <input type="number" id="rate" name="rate" class="form-control" min="0" step="0.01" placeholder="e.g. 25" required>
+        </div>
+        </div>
+
+        <div class="mb-2">
+        <label for="portfolio" class="form-label">Portfolio Link</label>
+        <input type="url" id="portfolio" name="portfolio" class="form-control" placeholder="https://yourportfolio.com">
+        </div>
+
+        <div class="mb-3">
+        <label for="availability" class="form-label">Availability</label>
+        <select id="availability" name="availability" class="form-select" required>
+          <option value="">-- Select Availability --</option>
+          <option value="full">Full-time (40+ hr/week)</option>
+          <option value="part">Part-time (20–40 hr/week)</option>
+          <option value="project">Project-based</option>
+          <option value="not">Not Available</option>
+        </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Complete Registration</button>
+        <button type="button" class="btn btn-outline-secondary" id="resetStartup">Reset</button>
+          <div id="startupFeedback" class="ms-auto text-success d-none align-self-center">Submitted ✓</div>
+      </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- <footer>
+    <div class="container text-center py-4  ">
+      <p>&copy; 2024 MyApp. All rights reserved.</p>
+      <a href="#" class="me-3">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+</footer> -->
+  </section>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="new.js"></script>
+</body>
+</html>

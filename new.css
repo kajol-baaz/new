@@ -1,0 +1,449 @@
+/* this is all the color collection uded in this design */
+:root {
+  --colorofnav--: #0282b4;
+  --h1color--: #f2f2f2;
+  --navlinkhover--: #003459;
+  --loginhover--: #00171F;
+  --pag2bg--: #f8f9fa;
+  --startupcolor--: #4cc0ee63;
+  --freelancercolor--: #7ff79d79;
+  --formcolos--: #eceaea;
+  --formbg--: #f9f9f9;
+  --formborder--: #ddd;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; 
+  scroll-behavior: smooth;
+  background-color: #5e5e28;/* this is not woking*/
+  overflow-x: hidden;
+}
+
+/* Navbar */
+#navcolor {
+  background-color: var(--colorofnav--);
+  color: var(--h1color--);
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  
+  z-index: 1000;
+}
+#navcolor .nav-link {
+  color: var(--h1color--);
+  font-size: 1.1em;
+}
+#navcolor .nav-link:hover {
+  color: var(--navlinkhover--);
+}
+#navcolor .navbar-brand {
+  font-size: 1.5em;
+  color: var(--h1color--);
+}
+#lits-of-login {
+  margin-right: 20px;
+  background-color: var(--navlinkhover--);
+  border-radius: 10px;
+  text-align: center;
+  width: 9%;  
+  margin-left: 1%;
+}
+#lits-of-login:hover {
+  color: var(--loginhover--);
+  background-color: var(--loginhover--);
+}
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 86vw;
+  margin: 20vh auto 0 auto;
+  background: linear-gradient(
+    135deg,
+    #00a8e8 25%,
+    #007ea7 50%,
+    #003459 75%
+  );
+  /* border: solid 1px #03045e; */
+  box-shadow: 5px 10px 20px rgba(7, 7, 7, 0.1);
+  border-radius: 15px;
+  padding: 2em;
+}
+
+.hero h1 {
+  color: var(--h1color--);
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.hero p {
+  color: var(--h1color--);
+  font-size: 1.2em;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/* Search Form */
+.hero form {
+  width: 46%;
+}
+
+.hero .form-control {
+  border-radius: 25px 0 0 25px;
+  padding: 0.8em;
+}
+
+.hero .btn {
+  border-radius: 0 25px 25px 0;
+  background-color: var(--loginhover--);
+  color: var(--h1color--);
+}
+.hero .btn:hover {
+  background-color: var(--navlinkhover--);
+}
+#Startup{
+  padding: 0;
+  margin-bottom: 1%;
+  /* text-align: center; */
+  width: 30%;     
+  height: 12%;   
+  border: none;
+  font-size: bold;
+  background-color: var(--h1color--);
+  color: var(--navlinkhover--); 
+  font-size: large;
+  font-family: Arial, sans-serif;  
+  box-shadow: 5px 10px 20px rgba(7, 7, 7, 0.1);      
+  border-radius: 6px;     
+  cursor: pointer;          
+  transition: transform 0.2s ease;
+}
+#freelancer{
+  padding: 0;
+  margin-bottom: 1%;
+  /* text-align: center; */
+  width: 30%;     
+  height: 12%;   
+  border: 1px solid var(--h1color--);
+  background-color: var(--navlinkhover--);
+  color: var(--h1color--); 
+  font-size: large;
+  font-family: Arial, sans-serif;        
+  border-radius: 6px;     
+  cursor: pointer;          
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect (design only, no color) */
+button:hover {
+  transform: scale(1.05);
+  font-size: large;
+}
+/* Active (when clicked) */
+button:active {
+  transform: scale(0.95);    /* Slightly shrink */
+}
+#page-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5em 2em;
+  background-color: var(--pag2bg--);
+  border-radius: 15px;
+  margin: 5em auto;
+  width: 80%;
+  min-height: 60vh;
+  position: relative;
+}
+.left-shift {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+}
+#p-0{
+  position: absolute;
+  left: 15%;
+  top: 35%;
+}
+.left-shift-1{
+  position: absolute;
+  left: 15%;
+  top: 45%;
+}
+#p-1{
+  position: absolute;
+  left: 15%;
+  top: 60%;
+}
+.right-shift {
+  position: absolute;
+  right: 15%;
+  top: 20%;
+}
+#p-2{
+  position: absolute;
+  right: 15%;
+  top: 35%;
+}
+.right-shift-1{
+  position: absolute;
+  right: 15%;
+  top: 45%;
+}
+#p-3{
+  position: absolute;
+  right: 15%;
+  top: 60%;
+}
+#page-2 h2 {
+  color: var(--navlinkhover--);
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  animation: slideShift 3s ease-in-out infinite;
+}
+
+@keyframes slideShift {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+#page-2 h1{
+  margin-top: 22%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2em;
+}
+#startups-sec {
+  text-align: center;
+  box-shadow: 5px 10px 20px rgba(7, 7, 7, 0.1);  
+  background-color: var(--startupcolor--);
+  height: 40%;
+  text-align: left;
+  margin-bottom: 2em;
+  border-radius: 5px;
+}
+#startups-sec i {
+margin-left: 2%;
+margin-top: 2%;
+font-size: 2em;
+font-weight: bold;
+}
+#startups-sec h2 {
+ margin-left: 2%;
+ font-size: 1.6em;
+}
+#startups-sec p {
+ margin-left: 2%;
+ font-size: 1.2em;
+ margin-bottom: 2%;
+}
+#freelancers-sec {
+  text-align: center;
+  box-shadow: 5px 10px 20px rgba(7, 7, 7, 0.1);  
+  background-color: var(--freelancercolor--);
+  height: 40%;
+  text-align: left;
+  border-radius: 5px;
+}
+#freelancers-sec i {
+margin-left: 2%;
+margin-top: 2%;
+font-size: 2em;
+font-weight: bold;
+}
+#freelancers-sec h2 {
+ margin-left: 2%;
+ font-size: 1.6em;
+}
+#freelancers-sec p {
+ margin-left: 2%;
+ font-size: 1.2em;
+ margin-bottom: 2%;
+}
+#sec-4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#sec-5{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  display: none;
+}
+#sec-5 h1{
+  margin-bottom: 6%;
+}
+.magic-sec{
+  box-shadow: 5px 10px 20px rgba(7, 7, 7, 0.1);  
+  /* background-color: var(--startupcolor--); */
+  border: solid 1px var(--formcolos--);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.icon {
+  margin-top: 2%;
+  font-size: 3em;
+  text-align: center;
+}
+.magic-sec h2 {
+ font-size: 1.6em;
+ text-align: center;
+}
+.magic-sec p {
+ font-size: 1.2em;
+ margin: 2%;
+ text-align: left;
+}
+/* this is the bg of hiden from */
+#startupFormWrap {
+  width: auto;
+  height: auto;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 5px 10px 20px rgba(7, 7, 7, 0.1);
+}
+/* Form container */
+.startup-form {
+  width: 100%;
+  margin: 20px auto;
+  background-color: var(--formbg--);
+  padding: 16px;
+  border: 1px solid var(--formborder--);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+/* Form groups */
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--formborder--);
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Button */
+.btn-submit {
+  color: #fff;
+  padding: 5% 10%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+/* ===== Freelancer Form Wrapper ===== */
+#freelancerFormWrap {
+  margin: 20% auto;
+  background-color: var(--formcolos--);
+  padding: 5%;
+  border: 1px solid var(--formborder--);
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+/* ===== Header Section ===== */
+#freelancerFormWrap h5 {
+  font-weight: 600;
+  color: #333;
+}
+
+#closeFreelancerForm {
+  font-size: 1.2em;
+  padding: 2% 5%;
+}
+
+/* ===== Labels ===== */
+.form-label {
+  display: block;
+  margin-bottom: 6%;
+  font-weight: 600;
+  color: #444;
+}
+
+/* ===== Inputs, Textarea, Select ===== */
+.form-control,
+.form-select {
+  width: 100%;
+  padding: 5%;
+  border: 1px solid var(--formborder--);
+  border-radius: 6px;
+  font-size: 2em;
+  box-sizing: border-box;
+}
+/* 
+/* ===== Smooth Animation when Form Appears ===== 
+#freelancerFormWrap.d-none {
+  display: none;
+}
+
+#freelancerFormWrap.show {
+  animation: slideDown 0.4s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1em 0;
+  margin-top: auto;
+  width: 100%;
+}
